@@ -5,7 +5,7 @@ function buscar()  {
     if (numberRooms == ""){
         alert("Debes indicar cantidad de habitaciones")
     }
-    else if (rangeMax.value < rangeMin.value){
+    else if (rangeMin.value > rangeMax.value){
         alert('El valor "Desde" no puede ser superior al valor "Hasta"')
     }
     else{

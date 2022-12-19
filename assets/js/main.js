@@ -1,0 +1,6 @@
+let rangeMin = document.querySelector("#rangeMin")
+let rangeMax = document.querySelector("#rangeMax")
+let rangeMinValue = document.querySelector("#rangeMinValue")
+let rangeMaxValue = document.querySelector("#rangeMaxValue")
+let cards = document.querySelector("#cards")
+let coincidencias = document.querySelector("#coincidencias")

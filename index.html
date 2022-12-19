@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <aside>
+        <h2>Filtrar</h2>
+        <div class="filter_rooms">
+            <p>Cantidad de habitaciones</p>
+            <input id="rooms" type="number" min="1">
+        </div>
+        <div class="filter_meter">
+                <p>Metros cuadrados</p>
+                <div class="meter">
+                    <div>
+                        <p>Desde</p>
+                        <input id="rangeMin" type="range" min="0" max="500" value="0">
+                        <p>
+                            <input type="number" id="rangeMinValue" value="0" min="0"></input>
+                            M
+                            <sup>2</sup>
+                        </p>
+                    </div>
+                    <div>
+                        <p>Hasta</p>
+                        <input id="rangeMax" type="range" min="0" max="1000" value="1000">
+                        <p>
+                            <input type="number" id="rangeMaxValue" value="1000" min="0"></input>
+                            M
+                            <sup>2</sup>
+                        </p>
+                    </div>
+                </div>
+                <button class="search" onclick="buscar()">Buscar</button>
+                <button class="search" onclick="mostrar()">Mostrar todo</button>
+        </div>
+    </aside>
+    <section>
+        <h2>Coincidencias: <span id="coincidencias"></span></h2>
+        <div id="cards"></div>
+    </section>
+    <script src="assets/js/propiedades.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/price_bar.js"></script>
+    <script src="assets/js/function_filter.js"></script>
+</body>
+
+</html>

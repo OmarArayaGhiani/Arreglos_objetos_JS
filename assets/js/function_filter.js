@@ -17,8 +17,8 @@ function mostrar() {
     mostrarPropiedades()
     rangeMin.value = 0
     rangeMinValue.value = 0
-    rangeMax.value = 1000
-    rangeMaxValue.value = 1000
+    rangeMax.value = 500
+    rangeMaxValue.value = 500
 }
 
 const mostrarPropiedades = (rooms = "") => {    

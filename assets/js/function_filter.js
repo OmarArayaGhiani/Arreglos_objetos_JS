@@ -1,5 +1,7 @@
 function buscar()  {
     let numberRooms = document.querySelector("#rooms").value
+    console.log(rangeMin.value)
+    console.log(rangeMax.value)
     if (numberRooms == ""){
         alert("Debes indicar cantidad de habitaciones")
     }
@@ -9,8 +11,6 @@ function buscar()  {
     else{
         mostrarPropiedades(numberRooms)
     }
-    
-    
 }
 
 function mostrar() {
@@ -40,8 +40,6 @@ const mostrarPropiedades = (rooms = "") => {
     }
     cards.innerHTML = home
     coincidencias.innerHTML = cantidad
-    console.log(rangeMin.value)
-    console.log(rangeMax.value)
 }
 
 mostrarPropiedades()
